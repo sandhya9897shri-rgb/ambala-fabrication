@@ -334,87 +334,7 @@
         .nav-item:hover .dropdown {
             display: flex;
         }
-        /* ==================== DYNAMIC HERO BACKGROUND SLIDESHOW ==================== */
-        .hero {
-            position: relative;
-            min-height: 88vh;
-            display: flex;
-            align-items: center;
-            padding: 80px 0;
-            background: radial-gradient(circle at 70% 30%, rgba(0, 242, 254, 0.12) 0%, transparent 60%),
-                        radial-gradient(circle at 20% 80%, rgba(243, 156, 18, 0.08) 0%, transparent 50%),
-                        linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-surface) 100%);
-            border-bottom: 1px solid var(--border-color);
-            overflow: hidden;
-        }
-
-        /* Container for background images */
-        .hero-bg-slider {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        /* Individual moving background slide */
-        .hero-bg-slide {
-            position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            animation: dynamicHeroBg 18s ease-in-out infinite;
-        }
-
-        /* Image 1: Modern Architectural Building */
-        .hero-bg-slide:nth-child(1) {
-            background-image: url('https://www.magnific.com/free-photos-vectors/glass-building');
-            animation-delay: 0s;
-        }
-
-        /* Image 2: Structural Steel & Glass Building */
-        .hero-bg-slide:nth-child(2) {
-            background-image: url('https://claytonglass.co.uk/news/top-10-most-beautiful-glass-buildings-in-the-world/');
-            animation-delay: 6s;
-        }
-
-        /* Image 3: High-Rise Modern Facade */
-        .hero-bg-slide:nth-child(3) {
-            background-image: url('https://science.howstuffworks.com/engineering/architecture/glass-building-pictures.htm');
-            animation-delay: 12s;
-        }
-
-        /* Smooth Crossfade + Moving/Zoom Motion */
-        @keyframes dynamicHeroBg {
-            0% {
-                opacity: 0;
-                transform: scale(1);
-            }
-            8% {
-                opacity: 0.18; /* Dimness level (18% opacity) */
-            }
-            33% {
-                opacity: 0.18;
-            }
-            41% {
-                opacity: 0;
-                transform: scale(1.1); /* Slow motion zoom effect */
-            }
-            100% {
-                opacity: 0;
-                transform: scale(1);
-            }
-        }
-
-        /* Ensure hero text content stays above the slider */
-        .hero-grid {
-            position: relative;
-            z-index: 2;
-        }
-
+        
         /* ==================== HERO SECTION ==================== */
         .hero {
             position: relative;
@@ -1101,18 +1021,7 @@
     </header>
 
     <section id="home" class="hero">
-        <section id="home" class="hero">
         
-        <!-- PASTE THIS SLIDER BLOCK HERE -->
-        <div class="hero-bg-slider">
-            <div class="hero-bg-slide"></div>
-            <div class="hero-bg-slide"></div>
-            <div class="hero-bg-slide"></div>
-        </div>
-
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <!-- Rest of your original content stays untouched below -->
         <div class="container hero-grid">
             <div class="hero-content">
                 <span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> Serving Haryana, Punjab & Himachal</span>
